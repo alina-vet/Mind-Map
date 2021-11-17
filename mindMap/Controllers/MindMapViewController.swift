@@ -31,26 +31,6 @@ class MindMapViewController: UIViewController, UIGestureRecognizerDelegate, Card
         view.addGestureRecognizer(tap)
     }
     
-    //MARK: - Gestures
-    
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//    }
-//
-//    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        guard let touch = touches.first else { return }
-//        let location = touch.location(in: view)
-//        let card = CardView(location)
-//        card.delegate = self
-//        view.addSubview(card)
-//
-//    }
-//
-//    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        guard let touch = touches.first else { return }
-//        let card = touch.location(in: view)
-//        if selectedCard == nil {
-//            selectedCard = card
-//    }
     
     //MARK: - CardViewDelegate
     
