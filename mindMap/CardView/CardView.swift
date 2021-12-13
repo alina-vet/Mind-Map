@@ -144,8 +144,3 @@ extension UIView {
         }
     }
 }
-
-/*
- guard let touch = touches.first else { return }
- let location = touch.location(in: view)
- */

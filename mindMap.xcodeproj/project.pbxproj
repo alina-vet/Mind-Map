@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C735FD98273E996100B37984 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C735FD97273E996100B37984 /* CardView.xib */; };
+		C72EEEF0276761B4006D4A55 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72EEEEF276761B4006D4A55 /* CardView.swift */; };
+		C72EEEF2276761C3006D4A55 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C72EEEF1276761C3006D4A55 /* CardView.xib */; };
 		C735FD9B273EE26A00B37984 /* LineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C735FD9A273EE26A00B37984 /* LineView.xib */; };
 		C735FD9D273EE27F00B37984 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735FD9C273EE27F00B37984 /* LineView.swift */; };
-		C77174D8273C643800919037 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77174D7273C643800919037 /* CardView.swift */; };
 		C7EB6753273935B00048D871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB6752273935B00048D871 /* AppDelegate.swift */; };
 		C7EB6755273935B00048D871 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB6754273935B00048D871 /* SceneDelegate.swift */; };
 		C7EB675A273935B00048D871 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7EB6758273935B00048D871 /* Main.storyboard */; };
@@ -30,10 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C735FD97273E996100B37984 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		C72EEEEF276761B4006D4A55 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C72EEEF1276761C3006D4A55 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		C735FD9A273EE26A00B37984 /* LineView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineView.xib; sourceTree = "<group>"; };
 		C735FD9C273EE27F00B37984 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
-		C77174D7273C643800919037 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C7EB674F273935B00048D871 /* mindMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mindMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EB6752273935B00048D871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7EB6754273935B00048D871 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C72EEEEE27676194006D4A55 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				C72EEEEF276761B4006D4A55 /* CardView.swift */,
+				C72EEEF1276761C3006D4A55 /* CardView.xib */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
 		C735FD99273EE23E00B37984 /* LineView */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,16 +110,6 @@
 			path = Content;
 			sourceTree = "<group>";
 		};
-		C77174D4273C627400919037 /* CardModel */ = {
-			isa = PBXGroup;
-			children = (
-				C77174D7273C643800919037 /* CardView.swift */,
-				C735FD97273E996100B37984 /* CardView.xib */,
-			);
-			name = CardModel;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		C7EB6746273935B00048D871 = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +131,7 @@
 			children = (
 				C7EB677D27397F9C0048D871 /* Application */,
 				C7705FA1273A98CB00D55227 /* Controllers */,
-				C77174D4273C627400919037 /* CardModel */,
+				C72EEEEE27676194006D4A55 /* CardView */,
 				C735FD99273EE23E00B37984 /* LineView */,
 				C7705FA2273A98E100D55227 /* Storyboards */,
 				C7705FA3273A990100D55227 /* Content */,
@@ -226,8 +225,8 @@
 			files = (
 				C7EB6777273979E80048D871 /* SF-Pro-Rounded-Medium.otf in Resources */,
 				C7EB675F273935B20048D871 /* LaunchScreen.storyboard in Resources */,
+				C72EEEF2276761C3006D4A55 /* CardView.xib in Resources */,
 				C7EB6773273979E80048D871 /* SF-Pro-Rounded-Regular.otf in Resources */,
-				C735FD98273E996100B37984 /* CardView.xib in Resources */,
 				C7EB6774273979E80048D871 /* SF-Pro-Rounded-Black.otf in Resources */,
 				C7EB6776273979E80048D871 /* SF-Pro-Rounded-Thin.otf in Resources */,
 				C7EB6775273979E80048D871 /* SF-Pro-Rounded-Light.otf in Resources */,
@@ -248,11 +247,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C72EEEF0276761B4006D4A55 /* CardView.swift in Sources */,
 				C7EB6753273935B00048D871 /* AppDelegate.swift in Sources */,
 				C7EB6767273978EE0048D871 /* StartTableViewController.swift in Sources */,
 				C735FD9D273EE27F00B37984 /* LineView.swift in Sources */,
 				C7EB6755273935B00048D871 /* SceneDelegate.swift in Sources */,
-				C77174D8273C643800919037 /* CardView.swift in Sources */,
 				C7EB677F273985F30048D871 /* MindMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

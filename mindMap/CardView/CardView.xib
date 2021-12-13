@@ -14,27 +14,27 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardView" customModule="mindMap" customModuleProvider="target">
             <connections>
-                <outlet property="cardField" destination="p8J-P1-Uhk" id="t2l-CA-Tkh"/>
-                <outlet property="cardView" destination="BaF-wo-DtF" id="wKf-jH-Ii3"/>
+                <outlet property="cardField" destination="5ik-xC-iYt" id="OqO-uk-Ijr"/>
+                <outlet property="cardView" destination="mH1-bG-AEk" id="fR2-Kt-fLC"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="BaF-wo-DtF">
+        <view contentMode="scaleToFill" id="mH1-bG-AEk">
             <rect key="frame" x="0.0" y="0.0" width="180" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="New Idea" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p8J-P1-Uhk">
+                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="New Idea" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ik-xC-iYt">
                     <rect key="frame" x="49.5" y="38" width="81" height="24"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
                     <textInputTraits key="textInputTraits" returnKeyType="done"/>
                 </textField>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="GCQ-I9-ajz"/>
+            <viewLayoutGuide key="safeArea" id="9t1-Xx-Hl1"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="p8J-P1-Uhk" firstAttribute="centerX" secondItem="BaF-wo-DtF" secondAttribute="centerX" id="IQo-zY-iuf"/>
-                <constraint firstItem="p8J-P1-Uhk" firstAttribute="centerY" secondItem="BaF-wo-DtF" secondAttribute="centerY" id="Suf-Qc-wHV"/>
+                <constraint firstItem="5ik-xC-iYt" firstAttribute="centerY" secondItem="mH1-bG-AEk" secondAttribute="centerY" id="WOi-2c-SLx"/>
+                <constraint firstItem="5ik-xC-iYt" firstAttribute="centerX" secondItem="mH1-bG-AEk" secondAttribute="centerX" id="lh5-kn-YIa"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <userDefinedRuntimeAttributes>
