@@ -44,7 +44,7 @@ class LineView: UIView {
         // path.addLine(to: destination) // Создать линию до конечной точки
         path.addCurve(to: destination, controlPoint1: startPoint + controlVector, controlPoint2: destination - controlVector)
         path.lineWidth = 2.0
-        UIColor.black.setStroke()
+        UIColor.systemGray.setStroke()
         path.stroke()
     }
     

@@ -18,9 +18,8 @@
             <rect key="frame" x="0.0" y="0.0" width="180" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p8J-P1-Uhk">
-                    <rect key="frame" x="30" y="33" width="120" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p8J-P1-Uhk">
+                    <rect key="frame" x="88" y="41" width="4" height="18.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" returnKeyType="done"/>
@@ -28,6 +27,10 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="GCQ-I9-ajz"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="p8J-P1-Uhk" firstAttribute="centerX" secondItem="BaF-wo-DtF" secondAttribute="centerX" id="IQo-zY-iuf"/>
+                <constraint firstItem="p8J-P1-Uhk" firstAttribute="centerY" secondItem="BaF-wo-DtF" secondAttribute="centerY" id="Suf-Qc-wHV"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
