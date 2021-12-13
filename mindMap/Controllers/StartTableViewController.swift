@@ -10,8 +10,7 @@ import UIKit
 class StartTableViewController: UITableViewController {
     
     var fileName = "\(UUID().uuidString)"
-    var files = [String]()
-    //var label: MindMapViewController!
+    var filesName = [String]()
     var labelText = "Idea"
 
     override func viewDidLoad() {
@@ -29,8 +28,8 @@ class StartTableViewController: UITableViewController {
             guard let text = ac.textFields?[0].text else { return }
             
             self.labelText = text
-            self.files.append(text)
-            print(self.files)
+            self.filesName.append(text)
+            print(self.filesName)
             self.loadVC()
             self.tableView.reloadData()
         }))
@@ -42,19 +41,19 @@ class StartTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return files.count
+        return filesName.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = files[indexPath.row]
+        cell.textLabel?.text = filesName[indexPath.row]
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "MindMapViewController") as! MindMapViewController
-        vc.title = files[indexPath.row]
-        vc.mindIdea = files[indexPath.row]
+        vc.title = filesName[indexPath.row]
+        vc.mindIdea = filesName[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
         
     }
@@ -83,7 +82,7 @@ class StartTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 
