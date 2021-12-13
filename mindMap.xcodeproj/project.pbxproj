@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C72EE3BE2767536900D2BC65 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72EE3BD2767536900D2BC65 /* Files.swift */; };
 		C735FD98273E996100B37984 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C735FD97273E996100B37984 /* CardView.xib */; };
 		C735FD9B273EE26A00B37984 /* LineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C735FD9A273EE26A00B37984 /* LineView.xib */; };
 		C735FD9D273EE27F00B37984 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735FD9C273EE27F00B37984 /* LineView.swift */; };
@@ -31,7 +30,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C72EE3BD2767536900D2BC65 /* Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
 		C735FD97273E996100B37984 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		C735FD9A273EE26A00B37984 /* LineView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineView.xib; sourceTree = "<group>"; };
 		C735FD9C273EE27F00B37984 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 			children = (
 				C77174D7273C643800919037 /* CardView.swift */,
 				C735FD97273E996100B37984 /* CardView.xib */,
-				C72EE3BD2767536900D2BC65 /* Files.swift */,
 			);
 			name = CardModel;
 			path = ..;
@@ -253,7 +250,6 @@
 			files = (
 				C7EB6753273935B00048D871 /* AppDelegate.swift in Sources */,
 				C7EB6767273978EE0048D871 /* StartTableViewController.swift in Sources */,
-				C72EE3BE2767536900D2BC65 /* Files.swift in Sources */,
 				C735FD9D273EE27F00B37984 /* LineView.swift in Sources */,
 				C7EB6755273935B00048D871 /* SceneDelegate.swift in Sources */,
 				C77174D8273C643800919037 /* CardView.swift in Sources */,

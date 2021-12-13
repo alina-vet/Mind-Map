@@ -7,9 +7,7 @@
 
 import UIKit
 
-class MindMapViewController: UIViewController, UIGestureRecognizerDelegate {
-    
-    
+class MindMapViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentView: UIView!
@@ -30,21 +28,23 @@ class MindMapViewController: UIViewController, UIGestureRecognizerDelegate {
         let tap = UITapGestureRecognizer(target: self, action: #selector(didTap(_:)))
         view.addGestureRecognizer(tap)
         
-        
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        if self.isMovingToParent {
-            let file = "\(UUID().uuidString)"
-            
-            let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-            let fileURL = dir.appendingPathComponent(file)
-        }
     }
     
 //MARK: - Helper Methods
     
+    func loadCards(_ atPoint: CGPoint, andText text: String, withColor textColor: UIColor, withBackColor color: UIColor) {
+        let card = CardView(atPoint)
+        card.cardField.text = text
+        card.cardView.backgroundColor = color
+        card.cardField.textColor = textColor
+        card.delegate = self
+        self.contentView.addSubview(card)
+        cards.append(card)
+    }
+    
+}
+
+extension MindMapViewController: UIGestureRecognizerDelegate {
     @objc func didTap(_ gesture: UITapGestureRecognizer) {
         print("did tap")
         if selectedCard != nil {
@@ -66,17 +66,6 @@ class MindMapViewController: UIViewController, UIGestureRecognizerDelegate {
             }
         }
     }
-    
-    func loadCards(_ atPoint: CGPoint, andText text: String, withColor textColor: UIColor, withBackColor color: UIColor) {
-        let card = CardView(atPoint)
-        card.cardField.text = text
-        card.cardView.backgroundColor = color
-        card.cardField.textColor = textColor
-        card.delegate = self
-        self.contentView.addSubview(card)
-        cards.append(card)
-    }
-    
 }
 
 extension MindMapViewController: CardViewDelegate {
@@ -95,17 +84,5 @@ extension MindMapViewController: CardViewDelegate {
         print("Edit")
         card.cardField.isUserInteractionEnabled = true
         card.cardField.becomeFirstResponder()
-//        let ac = UIAlertController(title: "Enter new name", message: nil, preferredStyle: .alert)
-//        ac.addTextField { textField in
-//            textField.clearButtonMode = .whileEditing
-//            textField.textAlignment = .center
-//            textField.text = card.cardField.text
-//        }
-//        ac.addAction(UIAlertAction(title: "Rename", style: .default, handler: { action in
-//            let textField = ac.textFields![0] as UITextField
-//            card.cardField.text = textField.text
-//        }))
-//        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-//        self.present(ac, animated: true, completion: nil)
     }
 }

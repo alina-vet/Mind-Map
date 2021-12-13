@@ -75,28 +75,25 @@
         <scene sceneID="e0m-fB-dwH">
             <objects>
                 <viewController storyboardIdentifier="MindMapViewController" id="XG0-Ug-VAe" customClass="MindMapViewController" customModule="mindMap" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="OmU-0X-mLk">
+                    <view key="view" contentMode="scaleToFill" id="OmU-0X-mLk">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zh3-Ji-bs2">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zh3-Ji-bs2">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iYM-1f-m1v" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="2008" height="2366"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYM-1f-m1v" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="2024" height="2366"/>
                                         <color key="backgroundColor" red="0.94905692340000003" green="0.94899064300000002" blue="0.96863061189999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2366" id="1Lm-Yv-ByR"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="2366" id="fg8-r4-3Hg"/>
-                                            <constraint firstAttribute="width" constant="2008" id="skK-h6-BoB"/>
+                                            <constraint firstAttribute="width" constant="2024" id="skK-h6-BoB"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="iYM-1f-m1v" firstAttribute="leading" secondItem="Zh3-Ji-bs2" secondAttribute="leading" id="0F8-82-bhU"/>
                                     <constraint firstAttribute="bottom" secondItem="iYM-1f-m1v" secondAttribute="bottom" id="Fw1-yI-Xzb"/>
-                                    <constraint firstItem="iYM-1f-m1v" firstAttribute="width" secondItem="Zh3-Ji-bs2" secondAttribute="width" multiplier="1.96094" id="QwG-Ac-TwO"/>
-                                    <constraint firstItem="iYM-1f-m1v" firstAttribute="height" secondItem="Zh3-Ji-bs2" secondAttribute="height" multiplier="1.73206" id="fzj-0Z-7vh"/>
                                     <constraint firstAttribute="trailing" secondItem="iYM-1f-m1v" secondAttribute="trailing" id="pN2-09-xV2"/>
                                     <constraint firstItem="iYM-1f-m1v" firstAttribute="top" secondItem="Zh3-Ji-bs2" secondAttribute="top" id="weh-lD-KSf"/>
                                 </constraints>

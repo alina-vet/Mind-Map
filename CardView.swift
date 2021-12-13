@@ -111,29 +111,6 @@ class CardView: UIView, UITextFieldDelegate {
         textField.isUserInteractionEnabled = false
         return true
     }
-    
-//MARK: - Notifocations
-    
-//    func registerForKeyboardNotifocations() {
-//        NotificationCenter.default.addObserver(self, selector: #selector(kbWillShow), name: NSNotification.Name., object: <#T##Any?#>)
-//    }
-//
-//    @objc func kbWillShow() {
-//
-//    }
-    
-}
-
-extension UIView {
-    @IBInspectable var cornerRadius: CGFloat {
-        get {
-            return layer.cornerRadius
-        }
-        set {
-            layer.cornerRadius = newValue
-            layer.masksToBounds = newValue > 0
-        }
-    }
 }
 
 extension CardView: UIContextMenuInteractionDelegate {
@@ -153,6 +130,18 @@ extension CardView: UIContextMenuInteractionDelegate {
             return  UIMenu(title: "Edit", image: nil, identifier: nil, options: [], children: [rename, delete])
         }
         return configuration
+    }
+}
+
+extension UIView {
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = newValue > 0
+        }
     }
 }
 
