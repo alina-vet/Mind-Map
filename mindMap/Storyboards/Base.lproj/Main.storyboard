@@ -7,11 +7,6 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="SF-Pro-Rounded-Bold.otf">
-            <string>SFProRounded-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="8bu-Qk-SuX">
@@ -35,20 +30,19 @@
         <scene sceneID="T6P-iU-bbm">
             <objects>
                 <tableViewController id="Lpn-Oe-aWZ" customClass="StartTableViewController" customModule="mindMap" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="5t1-AI-cOL">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="5t1-AI-cOL">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="yzE-22-yLA" style="IBUITableViewCellStyleDefault" id="f4q-FG-Uib">
-                                <rect key="frame" x="0.0" y="44.5" width="1024" height="51.5"/>
+                                <rect key="frame" x="20" y="49.5" width="984" height="51.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f4q-FG-Uib" id="eO8-0P-uwU">
-                                    <rect key="frame" x="0.0" y="0.0" width="994.5" height="51.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="958.5" height="51.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yzE-22-yLA">
-                                            <rect key="frame" x="20" y="0.0" width="966.5" height="51.5"/>
+                                            <rect key="frame" x="16" y="0.0" width="934.5" height="51.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
@@ -85,59 +79,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="onE-v3-qaB" customClass="CardView" customModule="mindMap" customModuleProvider="target">
-                                <rect key="frame" x="422" y="124" width="180" height="100"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="rD9-jg-op1">
-                                        <rect key="frame" x="60" y="35.5" width="60" height="29"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="24"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.58479875329999997" green="0.72532063719999995" blue="0.79217022660000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstItem="rD9-jg-op1" firstAttribute="centerX" secondItem="onE-v3-qaB" secondAttribute="centerX" id="52F-QK-srV"/>
-                                    <constraint firstAttribute="width" constant="180" id="7Kk-x6-rXv"/>
-                                    <constraint firstItem="rD9-jg-op1" firstAttribute="centerY" secondItem="onE-v3-qaB" secondAttribute="centerY" id="HJ9-5g-P3P"/>
-                                    <constraint firstAttribute="height" constant="100" id="nQx-ve-Rno"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="40"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCy-Up-24Q">
-                                <rect key="frame" x="756" y="162" width="31" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.78499796896269824" green="0.56484581386987232" blue="0.76023535558545674" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" imagePadding="50" cornerStyle="capsule"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="addNewIdea:" destination="XG0-Ug-VAe" eventType="touchUpInside" id="tLg-wr-Nbn"/>
-                                </connections>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zh3-Ji-bs2">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="mTy-QQ-44L"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="dcx-gE-zdS"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lte-6B-IAF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="onE-v3-qaB" firstAttribute="top" secondItem="Lte-6B-IAF" secondAttribute="top" constant="100" id="6OO-IY-20O"/>
-                            <constraint firstItem="onE-v3-qaB" firstAttribute="centerX" secondItem="Lte-6B-IAF" secondAttribute="centerX" id="RbT-6H-skz"/>
+                            <constraint firstItem="Zh3-Ji-bs2" firstAttribute="top" secondItem="OmU-0X-mLk" secondAttribute="top" id="FI9-46-vNY"/>
+                            <constraint firstAttribute="bottom" secondItem="Zh3-Ji-bs2" secondAttribute="bottom" id="IVh-7N-vt1"/>
+                            <constraint firstItem="Zh3-Ji-bs2" firstAttribute="trailing" secondItem="Lte-6B-IAF" secondAttribute="trailing" id="QQ4-DK-rKB"/>
+                            <constraint firstItem="Zh3-Ji-bs2" firstAttribute="leading" secondItem="Lte-6B-IAF" secondAttribute="leading" id="d1U-bB-GZW"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="button" destination="XCy-Up-24Q" id="Dc2-Eb-WKW"/>
-                        <outlet property="mainIdeaLabel" destination="rD9-jg-op1" id="dkz-5B-J9r"/>
-                        <outlet property="mainIdeaView" destination="onE-v3-qaB" id="QTQ-6a-7rd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uRX-u9-VDV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,7 +101,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
