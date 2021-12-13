@@ -75,16 +75,16 @@
         <scene sceneID="e0m-fB-dwH">
             <objects>
                 <viewController storyboardIdentifier="MindMapViewController" id="XG0-Ug-VAe" customClass="MindMapViewController" customModule="mindMap" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OmU-0X-mLk">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="OmU-0X-mLk">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zh3-Ji-bs2">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zh3-Ji-bs2">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYM-1f-m1v" userLabel="Content View">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iYM-1f-m1v" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="2008" height="2366"/>
-                                        <color key="backgroundColor" red="0.92156857250000002" green="0.92156863209999995" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.94905692340000003" green="0.94899064300000002" blue="0.96863061189999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2366" id="1Lm-Yv-ByR"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="2366" id="fg8-r4-3Hg"/>
